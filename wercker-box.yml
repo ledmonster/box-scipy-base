@@ -11,4 +11,4 @@ keywords:
   - pandas
 script: |
   sudo apt-get update
-  sudo apt-get build-dep python-scipy
+  sudo apt-get install g++ gfortran libatlas-base-dev
