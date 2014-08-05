@@ -4,12 +4,10 @@ inherits : wercker/python@1.0.4
 type : main
 platform : ubuntu@12.04
 description : a wercker box with packages for scipy.
-packages :
-  - python@2.7
-  - miniconda@3.5.5
 keywords:
-  - g++
-  - gfortran
-  - libatlas-base-dev
+  - python
+  - numpy
+  - scipy
+  - pandas
 script: |
-  sudo apt-get install g++ gfortran libatlas-base-dev
+  sudo apt-get build-dep python-scipy
