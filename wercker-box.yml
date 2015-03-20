@@ -1,6 +1,6 @@
 name : scipy-base
-version : 0.0.3
-inherits : wercker/python@1.0.4
+version : 0.1.0
+inherits : wercker/python@1.1.0
 type : main
 platform : ubuntu@12.04
 description : a wercker box with packages for scipy.
@@ -12,3 +12,7 @@ keywords:
 script: |
   sudo apt-get update
   sudo apt-get install g++ gfortran libatlas-base-dev
+  source run.sh
+  pip install numpy
+  pip install scipy
+  pip install pandas
